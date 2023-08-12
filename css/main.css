@@ -1,0 +1,378 @@
+/* Fonts---------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+/* Common-------------------------------------------------- */
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.main__section-top {
+  padding: var(--gap) 0;
+  background:linear-gradient(rgb(230, 246, 11), #ffffff);
+}
+
+.main__section-bottom {
+  padding: var(--gap) 0;
+  background: linear-gradient(#ffffff,rgb(230, 246, 11));
+}
+
+.h2 {
+  margin: 0 0 50px 50px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 14px;
+  color: var(--black-color);
+}
+
+img {
+  pointer-events: none
+}
+
+/* Colors-------------------------------------------------- */
+
+
+:root {
+  --main-color: rgb(230, 246, 11);
+
+  --black-color: #000000;
+
+  --white-color: #ffffff;
+  
+  --gray-color: #a1a1a1;
+}
+
+:root {
+  --gap : 50px;
+}
+
+/* Header-------------------------------------------------- */
+
+.header {
+  border-bottom: 2px solid #000000;
+}
+.header__container-fluid {
+  min-height: 90px;
+  background-color: var(--main-color);
+}
+
+.header__container {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 200px;
+}
+
+.header__right {
+  padding-top: 10px;
+}
+
+.header__list-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__list-link {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 18px;
+  color: var(--black-color);
+}
+
+/* Hero---------------------------------------------------- */
+
+.hero {
+  margin-bottom: var(--gap);
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px;
+  height: 670px;
+  background-image: url(./../images/hero-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  background-color: rgba(3, 2, 2, 0.5);
+  background-blend-mode: multiply;
+  border-radius: 40px;
+}
+
+.hero__title {
+  width: 60%;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--white-color);
+  margin-bottom: var(--gap);
+}
+
+.hero__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--white-color);
+}
+
+/* About---------------------------------------------------- */
+
+.about {
+  margin-bottom: var(--gap);
+}
+
+.about__middle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--black-color);
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* Goods----------------------------------------------------- */
+
+.goods__container-fluid {
+  background-color: var(--white-color);
+}
+
+.goods {
+  margin-bottom: var(--gap);
+}
+
+.goods__subtitle {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--black-color);
+}
+
+.goods__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.good__img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.good__info {
+  width: 100%;
+  position: relative;
+}
+
+.good__title {
+  margin: 20px 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  width: 75%;
+  color: var(--black-color)
+}
+
+.good__price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: red;
+}
+
+.good__descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black-color)
+}
+
+.goods__button {
+  padding: 20px 30px;
+  margin: 0 auto;
+  background-color: var(--main-color);
+  color: var(--black-color);
+  border-radius: 30px;
+}
+
+
+/* Bongs---------------------------------------------------- */
+
+
+/* For JS showing cards */
+
+.bong:nth-child(n + 5) {
+  display: none;
+}
+
+.bong.bong--visible {
+  display: flex;
+  align-items: center;
+}
+
+.bongs-center--hidden {
+  display: none;
+}
+
+/* Pipes---------------------------------------------------- */
+
+
+
+/* For JS showing cards */
+
+.pipe:nth-child(n + 5) {
+  display: none;
+}
+
+.pipe.pipe--visible {
+  display: flex;
+  align-items: center;
+}
+
+.pipes-center--hidden {
+  display: none;
+}
+
+/* Lifters---------------------------------------------------- */
+
+
+
+/* For JS showing cards */
+
+.lifter:nth-child(n + 5) {
+  display: none;
+}
+
+.lifter.lifter--visible {
+  display: flex;
+  align-items: center;
+}
+
+.lifters-center--hidden {
+  display: none;
+}
+
+  /* Others---------------------------------------------------- */
+
+
+
+/* For JS showing cards */
+
+.other:nth-child(n + 5) {
+  display: none;
+}
+
+.other.other--visible {
+  display: flex;
+  align-items: center;
+}
+
+.others-center--hidden {
+  display: none;
+}
+
+/* Feedbacks---------------------------------------------------- */
+
+.feedbacks {
+  margin-bottom: var(--gap);
+}
+
+.feedbacks__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedbacks__img {
+  margin-bottom: 30px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.feedbacks__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--black-color);
+}
+
+/* Contacts */
+
+.contacts__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--black-color);
+  margin-bottom: var(--gap);
+}
+
+.contacts__social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contacts__img {
+  fill: var(--black-color);
+  height: 100px;
+  width: 100px;
+}
+
+.contacts__mr {
+  width: 100px;
+  height: 200px;
+}
+
+.contacts__map {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer-------------------------------------------------- */
+
+.footer {
+  border-top: 2px solid #000000
+}
+
+.footer__container-fluid {
+  height: 120px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__container {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo,
+.footer__adult {
+  fill: var(--black-color);
+  width: 100px;
+  height: 90px;
+}
+
